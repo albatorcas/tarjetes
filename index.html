@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tarjetes codeartist</title>
+    <style type="text/css">
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        img{
+            width: 100%;
+        }
+        body{
+            background: linear-gradient(38deg, mediumpurple, red);
+        }
+        .contenidor{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            padding: 2em;
+            justify-content: center;
+        }
+        .dissenyador{
+            display: flex;
+            flex-direction: column;
+            width: 40em;
+            margin: 1em;
+            background: rgba(245,245,245, 0.8);
+            border-radius: 20px;
+         }
+        .cont_img{
+            height: 300px;
+            background: blue;
+            border-radius: 20px 20px 0 0;
+            background: purple;
+        }
+        .cont_img img{
+            mix-blend-mode: lighten;
+            filter: grayscale(100%);
+            border-radius: 20px 20px 0 0;
+            height: 100%;
+            object-fit: cover;
+            object-position: center center;
+        }
+        header{
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+            color: purple;
+            padding: 0.5em 1em;
+            border-bottom: 1px solid purple;
+            margin: 0.5em 1em;
+        }
+        h3{
+            font-weight: 600;
+            font-style: normal;
+        }
+        h4{
+            font-style: italic;
+            font-weight: 500;
+        }
+        .cont_txt{
+            margin: 1em 1em 0.5em 1em;
+            color: purple;
+            text-align: justify;
+            hyphens: auto;
+            font-size: 0.9em;
+            line-height: 1.4em;
+            flex-grow: 1;
+        }
+        .peu_dissenyador{
+            background: purple;
+            color: white;
+            font-style: italic;
+            font-size: 0.9em;
+            padding: 1em 1em 1em 1em;
+            border-radius: 0 0 20px 20px;
+        }
+        @media (max-width:600px){
+            body{
+                font-size: 14px;
+            }
+            .contenidor{
+                flex-direction: column;
+            }
+            .disenyador{
+                width: 30em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="contenidor">
+    <div class="dissenyador">
+           <div class="cont_img">
+           <img src="img/frida-photo.jpg" alt="Frida">
+       </div>
+       <header>
+           <h3>Frida Kahlo</h3>
+           <h4>6 de julio de 1907</h4>
+       </header>
+    <div class="cont_txt">
+           <p>Magdalena Carmen Frida Kahlo Calderón fue una pintora mexicana. Su vida estuvo marcada por el infortunio de contraer poliomielitis y después por un grave accidente en su juventud que la mantuvo postrada en cama durante largos periodos, llegando a someterse hasta a 32 operaciones quirúrgicas. Llevó una vida poco convencional. Su obra pictórica gira temáticamente en torno a su biografía y a su propio sufrimiento. Fue autora de unas 200 obras, principalmente autorretratos, en los que proyectó sus dificultades por sobrevivir.La obra de Frida y la de su marido, el reconocido pintor Diego Rivera, se influyeron mutuamente.</p>
+        </div>
+       <div clas="peu_dissenyador">
+           <p>Ambos compartieron el gusto por el arte popular mexicano de raíces indígenas, inspirando a otros pintores mexicanos del periodo posrevolucionario.</p>
+       </div>
+    </div>
+    <div class="dissenyador">
+       <div class="cont_img">
+           <img src="img/diego-photo.jpeg" alt="Diego">
+        </div>
+       <header>
+           <h3>Diego Rivera</h3>
+           <h4>8 de diciembre de 1886</h4>
+       </header>
+       <div class="cont_txt">
+           <p>Diego María de la Concepción Juan Nepomuceno Estanislao de la Rivera y Barrientos Acosta y Rodríguez fue un destacado muralista mexicano de ideología comunista, famoso por plasmar obras de alto contenido social en edificios públicos. Casado con Frida Kahlo, fue creador de diversos murales en distintos puntos del ahora llamado Centro Histórico de la Ciudad de México, así como en la Escuela Nacional de Agricultura de Chapingo,y en otras ciudades mexicanas (Cuernavaca y Acapulco), norteamericanas y sudamericanas (Buenos Aires, San Francisco, Detroit y Nueva York).</p>
+         </div>
+       <div clas="peu_dissenyador">
+           <p>Ambos compartieron el gusto por el arte popular mexicano de raíces indígenas, inspirando a otros pintores mexicanos del periodo posrevolucionario.</p>
+         </div>
+      </div>
+   </div>
+</body>
+</html>
